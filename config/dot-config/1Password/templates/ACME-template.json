@@ -1,0 +1,47 @@
+{
+  "title": "ACME enrollment",
+  "tags": ["acme", "incommon", "sectigo"],
+  "category": "SECURE_NOTE",
+  "additional_information": "InCommon/Sectigo ACME enrollment endpoint",
+  "sections": [
+    {
+      "id": "add more"
+    }
+  ],
+  "fields": [
+    {
+      "id": "notesPlain",
+      "type": "STRING",
+      "purpose": "NOTES",
+      "label": "notesPlain",
+      "value": "InCommon/Sectigo ACME enrollment endpoint"
+    },
+    {
+      "id": "baseuri",
+      "section": {
+        "id": "add more"
+      },
+      "type": "URL",
+      "label": "ACME URL (baseuri)",
+      "value": "https://acme.enterprise.sectigo.com"
+    },
+    {
+      "id": "eab-key-identifier",
+      "section": {
+        "id": "add more"
+      },
+      "type": "STRING",
+      "label": "Key ID (eab-key-identifier)",
+      "value": ""
+    },
+    {
+      "id": "eab-key",
+      "section": {
+        "id": "add more"
+      },
+      "type": "CONCEALED",
+      "label": "HMAC Key (eab-key)",
+      "value": ""
+    }
+  ]
+}

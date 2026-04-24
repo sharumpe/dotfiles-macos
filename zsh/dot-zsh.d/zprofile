@@ -1,0 +1,29 @@
+###
+### Environment
+###
+
+# Make the command-line more informational via color
+export CLICOLOR=1
+export LSCOLORS=Exfxcxdxbxegedabagacad
+
+# Get PATH set up to include local stuff
+PATH="${PATH}:$HOME/bin"
+
+# Add python
+PATH="${PATH}:$HOME/Library/Python/3.7/bin"
+
+# Make less work better
+LESS="${LESS} --no-init --quit-if-one-screen" && export LESS
+
+###
+### Aliases
+###
+
+# alias for htop
+alias "htop"="TERM=xterm htop"
+
+##
+### Load Local-Only (not stored in the repo)
+###
+
+source ~/.zprofile-local

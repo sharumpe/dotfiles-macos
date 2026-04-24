@@ -1,0 +1,15 @@
+{
+	"latest_signin": "westernwa",
+	"device": "kit5yuvslycoydrjpdjvkhek4y",
+	"accounts": [
+		{
+			"shorthand": "westernwa",
+			"accountUUID": "XDHBVYH2CBFPFPNFERAJCA3TVU",
+			"url": "https://westernwa.1password.com",
+			"email": "mclaugtd@wwu.edu",
+			"accountKey": "A3-JN48SN-JHKEAQ-L445Q-N3VAA-3LGQR-3DGZ2",
+			"userUUID": "YOTKF5A7KFG5FM4YALLAQVB2KM"
+		}
+	],
+	"system_auth_latest_signin": "YOTKF5A7KFG5FM4YALLAQVB2KM"
+}
