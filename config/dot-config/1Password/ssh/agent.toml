@@ -34,8 +34,8 @@ item = "Tim GitHub"
 
 [[ssh-keys]]
 vault = "Employee"
-item = "WWU Jumpbox 2025"
+item = "WWU Jumpbox 2026"
 
 [[ssh-keys]]
 vault = "Employee"
-item = "WWU Servers 2025"
+item = "WWU Servers 2026"
