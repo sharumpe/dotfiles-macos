@@ -1,7 +1,5 @@
 # Put homebrew stuff in the path last so it is first
-if [[ -f "/opt/homebrew/bin" ]] ; then
-  export PATH="/opt/homebrew/bin:$PATH"
-fi
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Start tmux if it's not already running, and if we're not in vscode
 if [ "vscode" != "$TERM_PROGRAM" ] \
