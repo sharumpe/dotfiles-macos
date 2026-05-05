@@ -108,7 +108,8 @@ fi
 #[[ $TERM == xterm* ]] || : ${PURE_POWER_MODE:=portable}
 #source ~/.zsh.d/purepower
 
-# Make kubectl easier tsource <(kubectl completion zsh) 2>&1 > /dev/null
+# Make kubectl easier to use
+source <(kubectl completion zsh) 2>&1 > /dev/null
 alias "kc"="kubectl"
 compdef __start_kubectl kc 2>&1 > /dev/null
 export KUBECONFIG=$HOME/.kube/config:$HOME/.kube/rancher-config:$HOME/.kube/aksetest-config:$HOME/.kube/akse1-config
