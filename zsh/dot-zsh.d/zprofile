@@ -7,9 +7,8 @@ export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
 
 # Make less work better
-LESS="${LESS} --no-init --quit-if-one-screen" && export LESS
+export LESS="eFRX"
 
-export TIMFOO="foo"
 
 ###
 ### Paths
