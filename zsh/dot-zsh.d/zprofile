@@ -18,20 +18,15 @@ export TIMFOO="foo"
 # Get PATH set up to include local stuff
 PATH="${PATH}:$HOME/bin"
 
-# Add python
-PATH="${PATH}:$HOME/Library/Python/3.7/bin"
-
-# Add java jdks
-PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
-PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
+# Add Rancher Desktop and nerdctl/kubectl binaries
+if [ -d $HOME/.rd/bin ]; then
+  PATH="$HOME/.rd/bin:$PATH"
+fi
 
 
 ###
 ### Aliases
 ###
-
-# alias for htop
-alias "htop"="TERM=xterm htop"
 
 
 ###
