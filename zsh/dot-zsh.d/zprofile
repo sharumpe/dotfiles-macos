@@ -9,6 +9,7 @@ export LSCOLORS=Exfxcxdxbxegedabagacad
 # Make less work better
 LESS="${LESS} --no-init --quit-if-one-screen" && export LESS
 
+export TIMFOO="foo"
 
 ###
 ### Paths
@@ -36,6 +37,6 @@ alias "htop"="TERM=xterm htop"
 ###
 ### Load Local-Only (not stored in the repo)
 ###
-if [ -f "~/.zprofile-local" ]; then
+if [ -f ~/.zprofile-local ]; then
   source ~/.zprofile-local
 fi

@@ -1,0 +1,26 @@
+### zprofile for this host only
+
+###
+### Environment
+###
+
+
+###
+### Paths
+###
+
+# Add python
+PATH="${PATH}:$HOME/Library/Python/3.7/bin"
+
+# Add java jdks
+PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
+
+
+###
+### Aliases
+###
+
+# alias for htop
+alias "htop"="TERM=xterm htop"
+
