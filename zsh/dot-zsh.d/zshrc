@@ -114,7 +114,7 @@ export PATH="$HOME/.rd/bin:$PATH"
 
 # Make kubectl easier to use
 KUBECTL=$(which kubectl 2>/dev/null)
-if [ -x $KUBECTL ]; then
+if [[ -x $KUBECTL ]]; then
   source <(kubectl completion zsh) 2>&1 > /dev/null
   alias "kc"="kubectl"
   compdef __start_kubectl kc 2>&1 > /dev/null
