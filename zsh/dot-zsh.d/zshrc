@@ -108,15 +108,17 @@ fi
 #[[ $TERM == xterm* ]] || : ${PURE_POWER_MODE:=portable}
 #source ~/.zsh.d/purepower
 
-# Make kubectl easier to use
-source <(kubectl completion zsh) 2>&1 > /dev/null
-alias "kc"="kubectl"
-compdef __start_kubectl kc 2>&1 > /dev/null
-export KUBECONFIG=$HOME/.kube/config:$HOME/.kube/rancher-config:$HOME/.kube/aksetest-config:$HOME/.kube/akse1-config
-
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="$HOME/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+# Make kubectl easier to use
+if [ -x kubectl ]; then
+  source <(kubectl completion zsh) 2>&1 > /dev/null
+  alias "kc"="kubectl"
+  compdef __start_kubectl kc 2>&1 > /dev/null
+  export KUBECONFIG=$HOME/.kube/config:$HOME/.kube/rancher-config:$HOME/.kube/aksetest-config:$HOME/.kube/akse1-config
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.zsh.d/p10k.zsh
 [[ ! -f ~/.zsh.d/p10k.zsh ]] || source ~/.zsh.d/p10k.zsh
