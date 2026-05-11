@@ -113,7 +113,8 @@ export PATH="$HOME/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
 # Make kubectl easier to use
-if [ -x kubectl ]; then
+KUBECTL=$(which kubectl 2>/dev/null)
+if [ -x $KUBECTL ]; then
   source <(kubectl completion zsh) 2>&1 > /dev/null
   alias "kc"="kubectl"
   compdef __start_kubectl kc 2>&1 > /dev/null
