@@ -30,7 +30,16 @@ fi
 
 ###
 ### Load Local-Only (not stored in the repo)
+### For things like tokens, etc.
 ###
-if [ -f ~/.zprofile-local ]; then
-  source ~/.zprofile-local
+if [ -f ~/.zsh.d/zprofile-local ]; then
+  source ~/.zsh.d/zprofile-local
+fi
+
+###
+### Load Host-Only profile
+### lets me have Mac- or Linux-specific things
+###
+if [ -f ~/.zsh.d/zprofile-$(hostname -s) ]; then
+  source ~/.zsh.d/zprofile-$(hostname -s)
 fi
