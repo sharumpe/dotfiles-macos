@@ -44,10 +44,3 @@ if [ -f ~/.zsh.d/zprofile-$(hostname -s) ]; then
   source ~/.zsh.d/zprofile-$(hostname -s)
 fi
 
-###
-### Load Tokens from 1password
-###
-if [[ -r ~/.zprofile-tokens ]]; then
-  source ~/.zprofile-tokens
-fi
-

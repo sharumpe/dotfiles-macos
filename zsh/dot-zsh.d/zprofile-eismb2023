@@ -24,3 +24,11 @@ PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
 # alias for htop
 alias "htop"="TERM=xterm htop"
 
+
+###
+### Load Tokens from 1password
+###
+if [[ -r ~/.zprofile-tokens ]]; then
+  source ~/.zprofile-tokens
+fi
+
