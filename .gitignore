@@ -1,3 +1,4 @@
+**/*.swp
 config/dot-config/puppet/analytics.yml
 config/dot-config/puppet/*analytics.yml
 config/dot-config/Microsoft/AzurePowerShell/ProfileCache/**
