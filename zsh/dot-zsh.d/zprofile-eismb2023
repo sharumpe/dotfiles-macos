@@ -4,6 +4,8 @@
 ### Environment
 ###
 
+export L_OS="Mac"
+
 
 ###
 ### Paths

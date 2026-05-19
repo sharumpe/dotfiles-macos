@@ -16,7 +16,12 @@ config.window_background_image_hsb = {
 config.window_background_opacity = 1
 
 config.font = wezterm.font 'Hack Nerd Font Mono'
-config.font_size = 16
+-- L_OS is set in .zprofile-$(hostname -s)
+if (os.getenv("L_OS") == "Linux") then
+  config.font_size = 12
+else
+  config.font_size = 16
+end
 
 -- Pull in the local keybind configs
 config.disable_default_key_bindings = true
