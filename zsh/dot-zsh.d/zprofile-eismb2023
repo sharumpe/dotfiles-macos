@@ -5,7 +5,8 @@
 ###
 
 export L_OS="Mac"
-
+# using a different username
+export SSH_USER="timm"
 
 ###
 ### Paths
